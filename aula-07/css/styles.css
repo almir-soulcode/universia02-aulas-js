@@ -1,0 +1,45 @@
+body {
+  margin: 16px auto;
+  max-width: 720px;
+  padding: 8px;
+}
+
+#semaforo {
+  width: 120px;
+  height: 220px;
+}
+
+button {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: seagreen;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr,
+td,
+th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: tomato;
+}
+
+hr {
+  border: 0;
+  margin: 25px 0;
+}

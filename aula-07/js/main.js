@@ -40,3 +40,25 @@ function trocarVermelho() {
 btnVermelho.addEventListener("click", trocarVermelho);
 btnAmarelo.addEventListener("click", trocarAmarelo);
 btnVerde.addEventListener("click", trocarVerde);
+
+// Exemplo 03
+
+let aluno = { nome: "Fagner", idade: 15, nota: 9.5 };
+let aluno2 = { nome: "João", idade: 17, nota: 9.1 };
+let aluno3 = { nome: "Maria", idade: 16, nota: 9.6 };
+
+// Array de objetos
+let turma = [
+  { nome: "Fagner Vieira", idade: 15, nota: 9.5 },
+  { nome: "João Carlos", idade: 17, nota: 9.1 },
+  { nome: "Maria Antônia", idade: 16, nota: 9.6 },
+  { nome: "André Campos", idade: 19, nota: 9.1 },
+];
+
+let listaTurma = document.getElementById("lista-turma");
+listaTurma.innerHTML = ""; // esvazia o conteúdo interno
+
+for (let i = 0; i < turma.length; i++) {
+  const aluno = turma[i];
+  listaTurma.innerHTML += `<li>${aluno.nome} - ${aluno.idade} - ${aluno.nota}</li>`;
+}
